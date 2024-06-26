@@ -70,11 +70,14 @@ public class LoginTest {
 		//org.testng.annotations.DataProvider;
 		@DataProvider
 		public Object[][] logindata() {
-			Object[][] data = new Object[][] {
+			Object[][] data = new Object[][] 
+			{
 				{"Admin" , "Qedge123!@#"},
-				
-				
+				{"Admin" , " "},
+				{"Admin" , " "},
+				{" " , " "}
 			};
+			
 			return data;
 		}
 		
